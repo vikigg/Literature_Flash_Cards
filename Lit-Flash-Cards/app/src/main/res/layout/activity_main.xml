@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="338dp"
+        android:layout_height="61dp"
+        android:textColor="#010101"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genre"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="339dp"
+        android:layout_height="72dp"
+        android:textColor="#010101"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/years"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <TextView
+        android:id="@+id/years"
+        android:layout_width="338dp"
+        android:layout_height="94dp"
+        android:textColor="#010101"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direction"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <TextView
+        android:id="@+id/direction"
+        android:layout_width="337dp"
+        android:layout_height="100dp"
+        android:textColor="#010101"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <Button
+        android:id="@+id/getWork"
+        android:layout_width="299dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getAuthor"
+        app:layout_constraintVertical_bias="0.016"
+        tools:text="ПРОИЗВЕДЕНИЕ" />
+
+    <Button
+        android:id="@+id/getAnswers"
+        android:layout_width="299dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:text="ОТГОВОРИ" />
+
+    <Button
+        android:id="@+id/getAuthor"
+        android:layout_width="299dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        tools:text="АВТОР" />
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="337dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#010101"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/getAnswers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getWork"
+        app:layout_constraintVertical_bias="0.023" />
+</androidx.constraintlayout.widget.ConstraintLayout>
