@@ -1,0 +1,11 @@
+com/example/lit_flash_cards/Work.java
+ com.example.lit_flash_cards.Work
+com/example/lit_flash_cards/BuildConfig.java
+ com.example.lit_flash_cards.BuildConfig
+com/example/lit_flash_cards/Author.java
+ com.example.lit_flash_cards.Author
+com/example/lit_flash_cards/MainActivity.java
+ com.example.lit_flash_cards.MainActivity
+ com.example.lit_flash_cards.MainActivity$1
+ com.example.lit_flash_cards.MainActivity$2
+ com.example.lit_flash_cards.MainActivity$3
