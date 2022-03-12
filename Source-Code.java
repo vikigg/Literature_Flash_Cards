@@ -4,13 +4,13 @@ package com.example.lit_flash_cards;
 
 public class Author {
     public String Name;
-    public String Direction;
-    public String Years;
+    public String LiteraryDirection;
+    public String ActiveYears;
 
-    public Author(String n, String d, String y){
-        Name = n;
-        Direction = d;
-        Years = y;
+    public Author(String name, String literaryDirection, String activeYears){
+        Name = name;
+        LiteraryDirection = literaryDirection;
+        ActiveYears = activeYears;
     };
 }
 
@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
         works[91] = new Work("Борбата е безмилостно жестока...(Предсмъртно)", "стихотворение", authors[12]);
         works[92] = new Work("Тютюн", "роман епопея", authors[13]);
         works[93] = new Work("Железният светилник", "роман епопея", authors[14]);
-        // ^ were partly done automatically with a C# program *smug wink*
+        // ^ were partly done automatically with a C# program
 
         getAuthor.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -219,8 +219,8 @@ public class MainActivity extends AppCompatActivity {
                 {
                     if(current[0]=="authors")
                     {
-                        direction.setText("Направление: " + authors[currentAuthor[0]].Direction);
-                        years.setText("Години: " + authors[currentAuthor[0]].Years);
+                        direction.setText("Направление: " + authors[currentAuthor[0]].LiteraryDirection);
+                        years.setText("Години: " + authors[currentAuthor[0]].ActiveYears);
                     }
                     else if(current[0]=="works")
                     {
